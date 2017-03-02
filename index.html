@@ -599,7 +599,10 @@
       
         
           
-          了解Markdown之所以在这里扯下Markdown，是因为在创建博客编写文章的时候发现需要给字体加粗、添加图片、添加链接等一大推的东西需要实现。于是问了下度娘，用着用着发现是一门标记语言，于是又见了世面(果然太年轻)。所以就边学边用边记录下来了。MarkDown作为一种用于写作的轻量级标记语言，它
+          了解Markdown之所以在这里扯下Markdown，是因为在创建博客编写文章的时候发现需要给字体加粗、添加图片、添加链接等一大推的东西需要实现。于是问了下度娘，用着用着发现是一门标记语言，于是又见了世面(果然太年轻)。所以就边学边用边记录下来了。MarkDown作为一种用于写作的轻量级标记语言，它用简单易懂的语法代替了一些其他文字处理软件的事后排版处理。而且只需要一个简单的文本编辑软件就可以实现，如Notepad++、微软自带的记事本都可以只需把后缀改成md即可。
+MarkDown使用不论Markdown怎么好用怎么强大，没用起来都是屁话。那么着手开始干吧！
+标题标题作为所有文章之首，而且等级森严必然需要分个三六九等。在Markdown中分级的方法只需在作为标题的文字前面带上#即可。等级越高所带#号越少，在Markdown中总共分六级。#一级标题##二级标题###三级标题以此类推。
+链接
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -789,8 +792,9 @@
         
           
           hexo中常用到的命令安装完git、node.js后安装hexo需要用到以下几条命令npm install hexo -g --save #安装npm update hexo -g #升级hexo init #初始化
-创建文章和推送文章时一般用到以下命令hexo clean #清除缓存hexo ge
-          ...
+创建文章和推送文章时一般用到以下命令hexo clean #清除缓存hexo generate 或者 hexo g #生成静态网页hexo server 或者 hexo s #启动本地服务预览hexo deployer 或者 hexo d #部署到服务器hexo new [layout] &lt;title&gt; 或者 hexo n [lyout] &lt;title&gt; #新建文章其中layout一般有post、page、draft三个模板，默认用post。
+
+          
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/02/25/hexo常用命令及作用/#more" rel="contents">
