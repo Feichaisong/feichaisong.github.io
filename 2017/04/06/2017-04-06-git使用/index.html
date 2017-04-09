@@ -87,19 +87,40 @@
 
 
 
-<meta name="description" content="git使用1、在github上新建一个空仓库2、在本机创建一个文件夹，然后打开git管理工具指定到刚新建的文件夹3、然后再用命令进一步操作：1234   #初始化$ git init#指定之前创建的远程仓库$ git remote add origin git@github.com*******.git
-4、在本地创建的文件夹中放入需要提交的文件5、然后名利添加1$ git add filenam">
+<meta name="description" content="git安装git使用
+在github上新建一个空仓库(远程仓库)
+在本机创建一个文件夹(本地仓库)，然后打开git管理工具指定到刚新建的文件夹
+然后再用命令进一步操作：
+1234   #初始化$ git init#指定之前创建的远程仓库或者本地仓库$ git remote add origin git@github.com*******.git
+
+在本地创建的文件夹中放入需要提交的文件
+
+然后命令">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git使用">
 <meta property="og:url" content="http://yoursite.com/2017/04/06/2017-04-06-git使用/index.html">
 <meta property="og:site_name" content="GiseR13">
-<meta property="og:description" content="git使用1、在github上新建一个空仓库2、在本机创建一个文件夹，然后打开git管理工具指定到刚新建的文件夹3、然后再用命令进一步操作：1234   #初始化$ git init#指定之前创建的远程仓库$ git remote add origin git@github.com*******.git
-4、在本地创建的文件夹中放入需要提交的文件5、然后名利添加1$ git add filenam">
-<meta property="og:updated_time" content="2017-04-06T14:17:33.621Z">
+<meta property="og:description" content="git安装git使用
+在github上新建一个空仓库(远程仓库)
+在本机创建一个文件夹(本地仓库)，然后打开git管理工具指定到刚新建的文件夹
+然后再用命令进一步操作：
+1234   #初始化$ git init#指定之前创建的远程仓库或者本地仓库$ git remote add origin git@github.com*******.git
+
+在本地创建的文件夹中放入需要提交的文件
+
+然后命令">
+<meta property="og:updated_time" content="2017-04-09T03:31:06.386Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git使用">
-<meta name="twitter:description" content="git使用1、在github上新建一个空仓库2、在本机创建一个文件夹，然后打开git管理工具指定到刚新建的文件夹3、然后再用命令进一步操作：1234   #初始化$ git init#指定之前创建的远程仓库$ git remote add origin git@github.com*******.git
-4、在本地创建的文件夹中放入需要提交的文件5、然后名利添加1$ git add filenam">
+<meta name="twitter:description" content="git安装git使用
+在github上新建一个空仓库(远程仓库)
+在本机创建一个文件夹(本地仓库)，然后打开git管理工具指定到刚新建的文件夹
+然后再用命令进一步操作：
+1234   #初始化$ git init#指定之前创建的远程仓库或者本地仓库$ git remote add origin git@github.com*******.git
+
+在本地创建的文件夹中放入需要提交的文件
+
+然后命令">
 
 
 
@@ -414,11 +435,36 @@
       
 
       
-        <h2 id="git使用"><a href="#git使用" class="headerlink" title="git使用"></a>git使用</h2><p>1、在github上新建一个空仓库<br>2、在本机创建一个文件夹，然后打开git管理工具指定到刚新建的文件夹<br>3、然后再用命令进一步操作：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">   <span class="comment">#初始化</span></div><div class="line">$ git init</div><div class="line"><span class="comment">#指定之前创建的远程仓库</span></div><div class="line">$ git remote add origin git@github.com*******.git</div></pre></td></tr></table></figure></p>
-<p>4、在本地创建的文件夹中放入需要提交的文件<br>5、然后名利添加<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git add filename</div></pre></td></tr></table></figure></p>
-<p>6、命令提交到远程仓库<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git commit -m <span class="string">"这里简单描写所做改动"</span></div></pre></td></tr></table></figure></p>
-<p>7、最后推送<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push -u origin master</div></pre></td></tr></table></figure></p>
-<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github******.git <span class="comment"># 克隆他人项目</span></div><div class="line">$ git diff <span class="comment"># 查看还未暂存的文件发生了那些变化</span></div><div class="line">$ git status  <span class="comment"># 查看状态</span></div><div class="line">$ git rm <span class="comment"># 移除文件</span></div><div class="line">$ git <span class="built_in">log</span> <span class="comment"># 查看提交历史</span></div><div class="line">$ git</div></pre></td></tr></table></figure>
+        <h2 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h2><h2 id="git使用"><a href="#git使用" class="headerlink" title="git使用"></a>git使用</h2><ul>
+<li>在github上新建一个空仓库(远程仓库)</li>
+<li>在本机创建一个文件夹(本地仓库)，然后打开git管理工具指定到刚新建的文件夹</li>
+<li><p>然后再用命令进一步操作：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">   <span class="comment">#初始化</span></div><div class="line">$ git init</div><div class="line"><span class="comment">#指定之前创建的远程仓库或者本地仓库</span></div><div class="line">$ git remote add origin git@github.com*******.git</div></pre></td></tr></table></figure>
+</li>
+<li><p>在本地创建的文件夹中放入需要提交的文件</p>
+</li>
+<li><p>然后命令添加</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git add filename</div><div class="line"><span class="comment"># 如：添加所有py文件</span></div><div class="line">$ git add *.py</div></pre></td></tr></table></figure>
+</li>
+<li><p>命令提交到远程仓库</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ git commit -m <span class="string">"这里简单描写所做改动"</span></div><div class="line"><span class="comment"># 撤销提交</span></div><div class="line">$ git commit --amend</div><div class="line"><span class="comment"># 取消暂存的文件</span></div><div class="line"><span class="comment"># git commit reset HEAD &lt;file&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>最后推送 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push -u origin master</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github******.git <span class="comment"># 克隆他人项目</span></div><div class="line">$ git diff <span class="comment"># 查看还未暂存的文件发生了那些变化</span></div><div class="line">$ git status  <span class="comment"># 查看状态</span></div><div class="line">$ git rm <span class="comment"># 移除文件</span></div><div class="line">$ git <span class="built_in">log</span> <span class="comment"># 查看提交历史</span></div><div class="line">$ git mv <span class="comment"># 移动文件</span></div><div class="line">$ cat gitignore 文件类型 <span class="comment"># 不备份的文件类型</span></div></pre></td></tr></table></figure>
+<p>用git log可以查看所有提交的历史记录，会显示每次记录的哈希值和描述的内容如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hasee@SS-PC MINGW64 /f/Job/AcodesManagement (master)</div><div class="line">$ git <span class="built_in">log</span></div><div class="line">commit 17270965d9bfc503e02398529e46c4719edf61cb</div><div class="line">Author: wolfsong &lt;23233322@qq.com&gt;</div><div class="line">Date:   Sat Apr 8 21:30:32 2017 +0800</div><div class="line">   修改了部分变量，更具可读性</div><div class="line">commit 0714bbfe930881c32f7285bf539d16b904c41855</div></pre></td></tr></table></figure></p>
+<p>然后用git reset –hard (commit 后边的一串哈希值)就可以回退到指定版本时的文件内容<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset --hard 1f00833d801d4ed5740bd4e7cb393e577ad488de</div></pre></td></tr></table></figure></p>
+<p>小结：  </p>
+<ul>
+<li>用git add file 添加新加文件或者修改后的文件</li>
+<li>用git commit 或者 git commit -m 提交</li>
+<li>用git status查看状态,如果是新加文件会提示new file,如果是更新文件会显示 modified</li>
+<li>用git log 查看提交历史</li>
+<li>用git reset –hard SHA-1值 回到所需要的版本</li>
+<li>用cat gitignore 忽略不要记录的变更文件类型</li>
+</ul>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=25721157&auto=1&height=66"></iframe>
 
       
@@ -450,8 +496,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/04/2017-04-04Python之Excel/" rel="next" title="2017/04/04Python之Excel">
-                <i class="fa fa-chevron-left"></i> 2017/04/04Python之Excel
+              <a href="/2017/04/04/2017-04-04Python之Excel/" rel="next" title="Python之Excel">
+                <i class="fa fa-chevron-left"></i> Python之Excel
               </a>
             
           </div>
@@ -661,7 +707,7 @@ var duoshuoQuery = {short_name:"lonewolfsong"};
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#git使用"><span class="nav-number">1.</span> <span class="nav-text">git使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-number">2.</span> <span class="nav-text">常用命令</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#git安装"><span class="nav-number">1.</span> <span class="nav-text">git安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git使用"><span class="nav-number">2.</span> <span class="nav-text">git使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-number">3.</span> <span class="nav-text">常用命令</span></a></li></ol></div>
             
 
           </div>

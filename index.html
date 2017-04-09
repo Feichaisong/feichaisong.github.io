@@ -412,15 +412,26 @@
       
         
           
-          git使用1、在github上新建一个空仓库2、在本机创建一个文件夹，然后打开git管理工具指定到刚新建的文件夹3、然后再用命令进一步操作：1234   #初始化$ git init#指定之前创建的远程仓库$ git remote add origin git@github.com*******.git
-4、在本地创建的文件夹中放入需要提交的文件5、然后名利添加1$ git add filename
-6、命令提交到远程仓库1$ git commit -m "这里简单描写所做改动"
-7、最后推送1git push -u origin master
-常用命令123456$ git clone git@github******.git # 克隆他人项目$ git diff # 查看还未暂存的文件发生了那些变化$ git status  # 查看状态$ git rm # 移除文件$ git log
+          git安装git使用
+在github上新建一个空仓库(远程仓库)
+在本机创建一个文件夹(本地仓库)，然后打开git管理工具指定到刚新建的文件夹
+然后再用命令进一步操作：
+1234   #初始化$ git init#指定之前创建的远程仓库或者本地仓库$ git remote add origin git@github.com*******.git
+
+在本地创建的文件夹中放入需要提交的文件
+
+然后命令添加
+123$ git add filename# 如：添加所有py文件$ git add *.py
+
+命令提交到远程仓库
+12345$ git commit -m "这里简单描写所做改动"# 撤销提交$ git commit --amend# 取消暂存的文件# git commit reset HEAD &lt;file&gt;
+
+最后推送 
+1git push -u origin master
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/04/06/2017-04-06-git使用/#далее" rel="contents">
+            <a class="btn" href="/2017/04/06/2017-04-06-git使用/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -489,7 +500,7 @@
               
                 
                 <a class="post-title-link" href="/2017/04/04/2017-04-04Python之Excel/" itemprop="url">
-                  2017/04/04Python之Excel
+                  Python之Excel
                 </a>
               
             
@@ -612,7 +623,7 @@ xlsxwriter123456import xlsxwriterworkbook = xlsxwrit
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/04/04/2017-04-04Python之Excel/#далее" rel="contents">
+            <a class="btn" href="/2017/04/04/2017-04-04Python之Excel/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -805,7 +816,7 @@ Python乱码解决查看Python的默认编码123&gt;&gt;&gt;import sys&gt;&gt;&g
           
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/04/02/2017-4-2-Python基础/#далее" rel="contents">
+            <a class="btn" href="/2017/04/02/2017-4-2-Python基础/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -974,7 +985,7 @@ Python乱码解决查看Python的默认编码123&gt;&gt;&gt;import sys&gt;&gt;&g
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/03/06/2017-03-06所见所感/#далее" rel="contents">
+            <a class="btn" href="/2017/03/06/2017-03-06所见所感/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1165,7 +1176,7 @@ Python乱码解决查看Python的默认编码123&gt;&gt;&gt;import sys&gt;&gt;&g
           
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/03/05/2017-03-05关于表白/#далее" rel="contents">
+            <a class="btn" href="/2017/03/05/2017-03-05关于表白/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
