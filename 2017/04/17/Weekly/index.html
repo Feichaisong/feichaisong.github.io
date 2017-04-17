@@ -87,19 +87,34 @@
 
 
 
-<meta name="description" content="操作环境：win7 x64Python版本: 2.7.12
-Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd能读取Excel也可简单的写入，xlwt只能写入无法打开已有的Excel表，而xlutils则像是前两者之间的桥梁，把他们进行衔接。xlsxwriter也只能写入不能读取，无法打开已有的Excel数据。openpyxl">
+<meta name="description" content="20170416 周日Python：class(类)：具有共同属性特征的事物的集合，在程序中则可以理解为是一个模板object(对象)：根据模板创建出来的实例面向对象的三大特性：继承、多态、封装类成员：字段、方法、属性
+字段字段包含：普通字段、静态字段，主要在于定义和使用时的不同，本质的区别在于内存中的保存位置。
+
+静态字段属于类
+普通字段属于对象
+静态字段只在内存中保存一次
+普通字段每个对象都要">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python之Excel">
-<meta property="og:url" content="http://yoursite.com/2017/04/04/2017-04-04Python之Excel/index.html">
+<meta property="og:title" content="Weekly">
+<meta property="og:url" content="http://yoursite.com/2017/04/17/Weekly/index.html">
 <meta property="og:site_name" content="GiseR13">
-<meta property="og:description" content="操作环境：win7 x64Python版本: 2.7.12
-Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd能读取Excel也可简单的写入，xlwt只能写入无法打开已有的Excel表，而xlutils则像是前两者之间的桥梁，把他们进行衔接。xlsxwriter也只能写入不能读取，无法打开已有的Excel数据。openpyxl">
-<meta property="og:updated_time" content="2017-04-09T13:05:06.455Z">
+<meta property="og:description" content="20170416 周日Python：class(类)：具有共同属性特征的事物的集合，在程序中则可以理解为是一个模板object(对象)：根据模板创建出来的实例面向对象的三大特性：继承、多态、封装类成员：字段、方法、属性
+字段字段包含：普通字段、静态字段，主要在于定义和使用时的不同，本质的区别在于内存中的保存位置。
+
+静态字段属于类
+普通字段属于对象
+静态字段只在内存中保存一次
+普通字段每个对象都要">
+<meta property="og:updated_time" content="2017-04-17T13:05:08.609Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python之Excel">
-<meta name="twitter:description" content="操作环境：win7 x64Python版本: 2.7.12
-Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd能读取Excel也可简单的写入，xlwt只能写入无法打开已有的Excel表，而xlutils则像是前两者之间的桥梁，把他们进行衔接。xlsxwriter也只能写入不能读取，无法打开已有的Excel数据。openpyxl">
+<meta name="twitter:title" content="Weekly">
+<meta name="twitter:description" content="20170416 周日Python：class(类)：具有共同属性特征的事物的集合，在程序中则可以理解为是一个模板object(对象)：根据模板创建出来的实例面向对象的三大特性：继承、多态、封装类成员：字段、方法、属性
+字段字段包含：普通字段、静态字段，主要在于定义和使用时的不同，本质的区别在于内存中的保存位置。
+
+静态字段属于类
+普通字段属于对象
+静态字段只在内存中保存一次
+普通字段每个对象都要">
 
 
 
@@ -127,13 +142,13 @@ Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd�
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/04/04/2017-04-04Python之Excel/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/17/Weekly/"/>
 
 
 
 
 
-  <title> Python之Excel | GiseR13 </title>
+  <title> Weekly | GiseR13 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -272,7 +287,7 @@ Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd�
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/04/2017-04-04Python之Excel/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/17/Weekly/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="LoneWolfSong">
@@ -296,7 +311,7 @@ Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd�
             
             
               
-                Python之Excel
+                Weekly
               
             
           </h2>
@@ -311,8 +326,8 @@ Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd�
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-04T21:13:45+08:00">
-                2017-04-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-17T07:04:23+08:00">
+                2017-04-17
               </time>
             
 
@@ -322,28 +337,6 @@ Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd�
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index">
-                    <span itemprop="name">Python</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -352,8 +345,8 @@ Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd�
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/04/04/2017-04-04Python之Excel/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/04/2017-04-04Python之Excel/" itemprop="commentCount"></span>
+                <a href="/2017/04/17/Weekly/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/17/Weekly/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -414,10 +407,18 @@ Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd�
       
 
       
-        <p>操作环境：win7 x64<br>Python版本: 2.7.12</p>
-<p>Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl<br>其中xlrd能读取Excel也可简单的写入，xlwt只能写入无法打开已有的Excel表，而xlutils则像是前两者之间的桥梁，把他们进行衔接。<br>xlsxwriter也只能写入不能读取，无法打开已有的Excel数据。<br>openpyxl可用于读写，Excel需是2007及以上版本。</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt;pip install xlsxwriter==<span class="string">"版本号"</span></div><div class="line">&gt;&gt;&gt;pip install xlrd == <span class="string">"版本号"</span></div><div class="line">&gt;&gt;&gt;pip install xlwt ==<span class="string">"版本号"</span></div><div class="line">...</div></pre></td></tr></table></figure>
-<h2 id="xlsxwriter"><a href="#xlsxwriter" class="headerlink" title="xlsxwriter"></a>xlsxwriter</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> xlsxwriter</div><div class="line"></div><div class="line">workbook = xlsxwriter.Workbook(<span class="string">'F:/test/test.xlsx'</span>)</div><div class="line">worksheet = workbook.add_sheet(<span class="string">'sheetName'</span>)</div><div class="line"></div><div class="line"><span class="comment">#</span></div></pre></td></tr></table></figure>
+        <p>20170416 周日<br>Python：<br>class(类)：具有共同属性特征的事物的集合，在程序中则可以理解为是一个模板<br>object(对象)：根据模板创建出来的实例<br>面向对象的三大特性：继承、多态、封装<br>类成员：字段、方法、属性</p>
+<h2 id="字段"><a href="#字段" class="headerlink" title="字段"></a>字段</h2><p>字段包含：普通字段、静态字段，主要在于定义和使用时的不同，本质的区别在于内存中的保存位置。</p>
+<ul>
+<li>静态字段属于类</li>
+<li>普通字段属于对象</li>
+<li>静态字段只在内存中保存一次</li>
+<li>普通字段每个对象都要保存<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">class human：</div><div class="line">    can_fly = False #静态字段</div><div class="line">    can_talk = True</div><div class="line">    has_leg = True</div><div class="line">    def __init__(self,language):</div><div class="line">	    self.language = language #普通字段</div><div class="line">	    pass</div><div class="line">	</div><div class="line">	# 普通方法 </div><div class="line">	def way_to_sea(self):</div><div class="line">	    pass</div><div class="line">	# 类方法 </div><div class="line">	@classmethed</div><div class="line">	def way_to_sky(cls):</div><div class="line">	    print "By plain"</div><div class="line">		print "我只允许类使用"</div><div class="line">	</div><div class="line">	@staticmethod</div><div class="line">	def hug():</div><div class="line">	    pass</div><div class="line">		</div><div class="line">	@property</div><div class="line">	def pro(self):</div><div class="line">	    pass</div><div class="line">	</div><div class="line"># 通过对象访问普通字段</div><div class="line">chinese = human("汉语")</div><div class="line">print chinese.language</div><div class="line"></div><div class="line"># 类直接访问静态字段</div><div class="line">human.can_talk</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>分为普通方法、静态方法、类方法<br>普通方法：由对象调用；至少有一个参数self(对象本身)<br>静态方法：由类调用，没有默认参数<br>类方法：由类调用；至少一个参数cls</p>
+<p>注：<br>字段和变量的区别：字段是变量的子集<br>函数和方法的区别：可以简单的理解为和object(对象)有关的叫method(方法)，和class(类)或者module相关的叫function(函数)</p>
+<h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><p>属性可以理解为是普通方法的变种<br>特性：只有一个参数self<br>调用的时候不需要()</p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=25721157&auto=1&height=66"></iframe>
 
       
@@ -449,8 +450,8 @@ Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/02/2017-4-2-Python基础/" rel="next" title="Python问题之中文乱码">
-                <i class="fa fa-chevron-left"></i> Python问题之中文乱码
+              <a href="/2017/04/06/2017-04-06-git使用/" rel="next" title="git使用">
+                <i class="fa fa-chevron-left"></i> git使用
               </a>
             
           </div>
@@ -458,10 +459,6 @@ Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd�
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/04/06/2017-04-06-git使用/" rel="prev" title="git使用">
-                git使用 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -476,10 +473,10 @@ Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd�
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2017/04/04/2017-04-04Python之Excel/"
-     data-title="Python之Excel"
+        <div class="ds-share flat" data-thread-key="2017/04/17/Weekly/"
+     data-title="Weekly"
      data-content=""
-     data-url="http://yoursite.com/2017/04/04/2017-04-04Python之Excel/">
+     data-url="http://yoursite.com/2017/04/17/Weekly/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -507,8 +504,8 @@ Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd�
   <div class="comments" id="comments">
     
       <!-- 多说评论框 start -->
-	  <div class="ds-thread" data-thread-key="2017/04/04/2017-04-04Python之Excel/"
-           data-title="Python之Excel" data-url="http://yoursite.com/2017/04/04/2017-04-04Python之Excel/">
+	  <div class="ds-thread" data-thread-key="2017/04/17/Weekly/"
+           data-title="Weekly" data-url="http://yoursite.com/2017/04/17/Weekly/">
       </div>
 	  <!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
@@ -664,7 +661,7 @@ var duoshuoQuery = {short_name:"lonewolfsong"};
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#xlsxwriter"><span class="nav-number">2.</span> <span class="nav-text">xlsxwriter</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#字段"><span class="nav-number">1.</span> <span class="nav-text">字段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法"><span class="nav-number">2.</span> <span class="nav-text">方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性"><span class="nav-number">3.</span> <span class="nav-text">属性</span></a></li></ol></div>
             
 
           </div>
