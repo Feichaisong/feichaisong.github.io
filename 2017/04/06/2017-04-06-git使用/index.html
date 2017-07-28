@@ -109,7 +109,7 @@
 在本地创建的文件夹中放入需要提交的文件
 
 然后命令">
-<meta property="og:updated_time" content="2017-04-09T03:31:06.386Z">
+<meta property="og:updated_time" content="2017-07-28T04:24:27.397Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git使用">
 <meta name="twitter:description" content="git安装git使用
@@ -446,18 +446,17 @@
 <li><p>然后命令添加</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git add filename</div><div class="line"><span class="comment"># 如：添加所有py文件</span></div><div class="line">$ git add *.py</div></pre></td></tr></table></figure>
 </li>
-<li><p>命令提交到远程仓库</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ git commit -m <span class="string">"这里简单描写所做改动"</span></div><div class="line"><span class="comment"># 撤销提交</span></div><div class="line">$ git commit --amend</div><div class="line"><span class="comment"># 取消暂存的文件</span></div><div class="line"><span class="comment"># git commit reset HEAD &lt;file&gt;</span></div></pre></td></tr></table></figure>
+<li><p>命令提交到本地仓库</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">   <span class="comment"># 提交到本地仓库并对改动的内容进行描述</span></div><div class="line">$ git commit -m <span class="string">"这里简单描写所做改动"</span></div><div class="line"><span class="comment"># 撤销提交</span></div><div class="line">$ git commit --amend</div><div class="line"><span class="comment"># 取消暂存的文件</span></div><div class="line"><span class="comment"># git commit reset HEAD &lt;file&gt;</span></div></pre></td></tr></table></figure>
 </li>
-<li><p>最后推送 </p>
+<li><p>推送到远程仓库</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push -u origin master</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github******.git <span class="comment"># 克隆他人项目</span></div><div class="line">$ git diff <span class="comment"># 查看还未暂存的文件发生了那些变化</span></div><div class="line">$ git status  <span class="comment"># 查看状态</span></div><div class="line">$ git rm <span class="comment"># 移除文件</span></div><div class="line">$ git <span class="built_in">log</span> <span class="comment"># 查看提交历史</span></div><div class="line">$ git mv <span class="comment"># 移动文件</span></div><div class="line">$ cat gitignore 文件类型 <span class="comment"># 不备份的文件类型</span></div></pre></td></tr></table></figure>
 <p>用git log可以查看所有提交的历史记录，会显示每次记录的哈希值和描述的内容如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hasee@SS-PC MINGW64 /f/Job/AcodesManagement (master)</div><div class="line">$ git <span class="built_in">log</span></div><div class="line">commit 17270965d9bfc503e02398529e46c4719edf61cb</div><div class="line">Author: wolfsong &lt;23233322@qq.com&gt;</div><div class="line">Date:   Sat Apr 8 21:30:32 2017 +0800</div><div class="line">   修改了部分变量，更具可读性</div><div class="line">commit 0714bbfe930881c32f7285bf539d16b904c41855</div></pre></td></tr></table></figure></p>
 <p>然后用git reset –hard (commit 后边的一串哈希值)就可以回退到指定版本时的文件内容<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset --hard 1f00833d801d4ed5740bd4e7cb393e577ad488de</div></pre></td></tr></table></figure></p>
-<p>小结：  </p>
-<ul>
+<h2 id="小结："><a href="#小结：" class="headerlink" title="小结："></a>小结：</h2><ul>
 <li>用git add file 添加新加文件或者修改后的文件</li>
 <li>用git commit 或者 git commit -m 提交</li>
 <li>用git status查看状态,如果是新加文件会提示new file,如果是更新文件会显示 modified</li>
@@ -465,6 +464,7 @@
 <li>用git reset –hard SHA-1值 回到所需要的版本</li>
 <li>用cat gitignore 忽略不要记录的变更文件类型</li>
 </ul>
+<p><a href="http://blog.csdn.net/chenj_freedom/article/details/50543152" target="_blank" rel="external">git工作原理简单解析</a></p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=25721157&auto=1&height=66"></iframe>
 
       
@@ -711,7 +711,7 @@ var duoshuoQuery = {short_name:"lonewolfsong"};
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#git安装"><span class="nav-number">1.</span> <span class="nav-text">git安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git使用"><span class="nav-number">2.</span> <span class="nav-text">git使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-number">3.</span> <span class="nav-text">常用命令</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#git安装"><span class="nav-number">1.</span> <span class="nav-text">git安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git使用"><span class="nav-number">2.</span> <span class="nav-text">git使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-number">3.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结："><span class="nav-number">4.</span> <span class="nav-text">小结：</span></a></li></ol></div>
             
 
           </div>
