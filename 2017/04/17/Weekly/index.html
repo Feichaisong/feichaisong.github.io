@@ -105,7 +105,7 @@
 静态字段属于类
 普通字段属于对象
 静态字段只在内存中保">
-<meta property="og:updated_time" content="2017-04-22T11:25:17.102Z">
+<meta property="og:updated_time" content="2017-08-01T06:21:14.390Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Weekly">
 <meta name="twitter:description" content="20170422 周六 晴
@@ -417,7 +417,7 @@
 <li>普通字段每个对象都要保存<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">class human：</div><div class="line">    can_fly = False #静态字段</div><div class="line">    can_talk = True</div><div class="line">    has_leg = True</div><div class="line">    def __init__(self,language):</div><div class="line">	    self.language = language #普通字段</div><div class="line">	    pass</div><div class="line">	</div><div class="line">	# 普通方法 </div><div class="line">	def way_to_sea(self):</div><div class="line">	    pass</div><div class="line">	# 类方法 </div><div class="line">	@classmethed</div><div class="line">	def way_to_sky(cls):</div><div class="line">	    print "By plain"</div><div class="line">		print "我只允许类使用"</div><div class="line">	</div><div class="line">	@staticmethod</div><div class="line">	def hug():</div><div class="line">	    pass</div><div class="line">		</div><div class="line">	@property</div><div class="line">	def pro(self):</div><div class="line">	    pass</div><div class="line">	</div><div class="line"># 通过对象访问普通字段</div><div class="line">chinese = human("汉语")</div><div class="line">print chinese.language</div><div class="line"></div><div class="line"># 类直接访问静态字段</div><div class="line">human.can_talk</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>分为普通方法、静态方法、类方法<br>普通方法：由对象调用；至少有一个参数self(对象本身)<br>静态方法：由类调用，没有默认参数<br>类方法：由类调用；至少一个参数cls</p>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>分为普通方法、静态方法、类方法<br>普通方法：由对象调用；至少有一个参数self(对象本身)<br>静态方法：由类调用，没有默认参数<br>类方法：由类调用；至少一个参数cls  </p>
 <p>注：<br>字段和变量的区别：字段是变量的子集<br>函数和方法的区别：可以简单的理解为和object(对象)有关的叫method(方法)，和class(类)或者module相关的叫function(函数)</p>
 <h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><p>属性可以理解为是普通方法的变种<br>特性：只有一个参数self<br>调用的时候不需要()</p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=25721157&auto=1&height=66"></iframe>
@@ -575,7 +575,7 @@ var duoshuoQuery = {short_name:"lonewolfsong"};
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">15</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -584,7 +584,7 @@ var duoshuoQuery = {short_name:"lonewolfsong"};
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -593,7 +593,7 @@ var duoshuoQuery = {short_name:"lonewolfsong"};
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
