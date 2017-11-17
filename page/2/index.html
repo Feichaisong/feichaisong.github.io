@@ -863,7 +863,7 @@
               
                 
                 <a class="post-title-link" href="/2017/04/04/2017-04-04Python之Excel/" itemprop="url">
-                  Python之Excel
+                  Python
                 </a>
               
             
@@ -979,10 +979,18 @@
       
         
           
-          操作环境：win7 x64Python版本: 2.7.12
-Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd能读取Excel也可简单的写入，xlwt只能写入无法打开已有的Excel表，而xlutils则像是前两者之间的桥梁，把他们进行衔接。xlsxwriter也只能写入不能读取，无法打开已有的Excel数据。openpyxl可用于读写，Excel需是2007及以上版本。
-安装1234&gt;&gt;&gt;pip install xlsxwriter=="版本号"&gt;&gt;&gt;pip install xlrd == "版本号"&gt;&gt;&gt;pip install xlwt =="版本号"...
-xlsxwriter123456import xlsxwriterworkbook = xlsxwrit
+          Python基础之文件I/O打开file后再进行操作file = open(“fileName”,”mode”)
+mode有以下几种形式
+r:以只读方式打开，指针会放在文件的开头。默认模式
+r+:打开文件用于读写，指针会放在文件的开头
+rb:以二进制形式打开文件用于只读，指针放在文件的开头
+rb+:以二进制形式打开文件用于读写，指针放在文件开头
+w:打开文件用于写入，指针放在文件的开头，如果已经存在将其覆盖。默认模式
+w+:打开文件用于读写，指针放在文件的开头，如果已存在将其覆盖。
+a:打开文件追加内容，指针在文件的末尾，如果文件不存在，新建文件写入。  
+a+:打开文件用于读写，如果文件已经存在，在其末尾追加，如果不存在，新建文件用于写入。  
+
+file的常用方法file.write()file.close()1234s = ",".join(("China","Fuck","Itse
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1055,7 +1063,7 @@ xlsxwriter123456import xlsxwriterworkbook = xlsxwrit
               
                 
                 <a class="post-title-link" href="/2017/04/02/2017-4-2-Python基础/" itemprop="url">
-                  Python问题之中文乱码
+                  Python问题综合
                 </a>
               
             
@@ -1171,12 +1179,11 @@ xlsxwriter123456import xlsxwriterworkbook = xlsxwrit
       
         
           
-          环境：win7 x64python版本： 2.5.1，2.7.6，2.7.12
+          环境：win7 x64python版本： 2.5.1，2.7.6，2.7.12各种python库下载地址：http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy
 Python乱码解决查看Python的默认编码123&gt;&gt;&gt;import sys&gt;&gt;&gt;sys.getdefaultencoding()&gt;&gt;&gt;'ascii'
 在.py文件中添加上1234# coding:utf-8import sysreload(sys)sys.setdefaultencoding('utf-8')
-
-
-          
+通过pip install 安装库时提示 is not a supported wheel on this platform首先查看whl文件和python的版本是否一致然后再打开python idle通过以下命令查看支持的安
+          ...
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/04/02/2017-4-2-Python基础/#more" rel="contents">

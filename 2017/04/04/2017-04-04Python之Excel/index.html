@@ -87,19 +87,34 @@
 
 
 
-<meta name="description" content="操作环境：win7 x64Python版本: 2.7.12
-Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd能读取Excel也可简单的写入，xlwt只能写入无法打开已有的Excel表，而xlutils则像是前两者之间的桥梁，把他们进行衔接。xlsxwriter也只能写入不能读取，无法打开已有的Excel数据。openpyxl">
+<meta name="description" content="Python基础之文件I/O打开file后再进行操作file = open(“fileName”,”mode”)
+mode有以下几种形式
+r:以只读方式打开，指针会放在文件的开头。默认模式
+r+:打开文件用于读写，指针会放在文件的开头
+rb:以二进制形式打开文件用于只读，指针放在文件的开头
+rb+:以二进制形式打开文件用于读写，指针放在文件开头
+w:打开文件用于写入，指针放在文件的开头，如果已经存">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python之Excel">
+<meta property="og:title" content="Python">
 <meta property="og:url" content="http://yoursite.com/2017/04/04/2017-04-04Python之Excel/index.html">
 <meta property="og:site_name" content="GiseR13">
-<meta property="og:description" content="操作环境：win7 x64Python版本: 2.7.12
-Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd能读取Excel也可简单的写入，xlwt只能写入无法打开已有的Excel表，而xlutils则像是前两者之间的桥梁，把他们进行衔接。xlsxwriter也只能写入不能读取，无法打开已有的Excel数据。openpyxl">
-<meta property="og:updated_time" content="2017-04-09T13:05:06.455Z">
+<meta property="og:description" content="Python基础之文件I/O打开file后再进行操作file = open(“fileName”,”mode”)
+mode有以下几种形式
+r:以只读方式打开，指针会放在文件的开头。默认模式
+r+:打开文件用于读写，指针会放在文件的开头
+rb:以二进制形式打开文件用于只读，指针放在文件的开头
+rb+:以二进制形式打开文件用于读写，指针放在文件开头
+w:打开文件用于写入，指针放在文件的开头，如果已经存">
+<meta property="og:updated_time" content="2017-09-07T01:39:54.208Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python之Excel">
-<meta name="twitter:description" content="操作环境：win7 x64Python版本: 2.7.12
-Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd能读取Excel也可简单的写入，xlwt只能写入无法打开已有的Excel表，而xlutils则像是前两者之间的桥梁，把他们进行衔接。xlsxwriter也只能写入不能读取，无法打开已有的Excel数据。openpyxl">
+<meta name="twitter:title" content="Python">
+<meta name="twitter:description" content="Python基础之文件I/O打开file后再进行操作file = open(“fileName”,”mode”)
+mode有以下几种形式
+r:以只读方式打开，指针会放在文件的开头。默认模式
+r+:打开文件用于读写，指针会放在文件的开头
+rb:以二进制形式打开文件用于只读，指针放在文件的开头
+rb+:以二进制形式打开文件用于读写，指针放在文件开头
+w:打开文件用于写入，指针放在文件的开头，如果已经存">
 
 
 
@@ -133,7 +148,7 @@ Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd�
 
 
 
-  <title> Python之Excel | GiseR13 </title>
+  <title> Python | GiseR13 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -296,7 +311,7 @@ Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd�
             
             
               
-                Python之Excel
+                Python
               
             
           </h2>
@@ -414,7 +429,19 @@ Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd�
       
 
       
-        <p>操作环境：win7 x64<br>Python版本: 2.7.12</p>
+        <h1 id="Python基础之文件I-O"><a href="#Python基础之文件I-O" class="headerlink" title="Python基础之文件I/O"></a>Python基础之文件I/O</h1><p>打开file后再进行操作<br>file = open(“fileName”,”mode”)</p>
+<h2 id="mode有以下几种形式"><a href="#mode有以下几种形式" class="headerlink" title="mode有以下几种形式"></a>mode有以下几种形式</h2><ul>
+<li>r:以只读方式打开，指针会放在文件的开头。默认模式</li>
+<li>r+:打开文件用于读写，指针会放在文件的开头</li>
+<li>rb:以二进制形式打开文件用于只读，指针放在文件的开头</li>
+<li>rb+:以二进制形式打开文件用于读写，指针放在文件开头</li>
+<li>w:打开文件用于写入，指针放在文件的开头，如果已经存在将其覆盖。默认模式</li>
+<li>w+:打开文件用于读写，指针放在文件的开头，如果已存在将其覆盖。</li>
+<li>a:打开文件追加内容，指针在文件的末尾，如果文件不存在，新建文件写入。  </li>
+<li>a+:打开文件用于读写，如果文件已经存在，在其末尾追加，如果不存在，新建文件用于写入。  </li>
+</ul>
+<p>file的常用方法<br>file.write()<br>file.close()<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">s = <span class="string">","</span>.join((<span class="string">"China"</span>,<span class="string">"Fuck"</span>,<span class="string">"Itself"</span>))</div><div class="line">f = open(<span class="string">"test.txt"</span>,<span class="string">"a+"</span>)</div><div class="line">f.write(s)</div><div class="line">f.close()</div></pre></td></tr></table></figure></p>
+<h1 id="Python之Excel"><a href="#Python之Excel" class="headerlink" title="Python之Excel"></a>Python之Excel</h1><p>操作环境：win7 x64<br>Python版本: 2.7.12</p>
 <p>Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl<br>其中xlrd能读取Excel也可简单的写入，xlwt只能写入无法打开已有的Excel表，而xlutils则像是前两者之间的桥梁，把他们进行衔接。<br>xlsxwriter也只能写入不能读取，无法打开已有的Excel数据。<br>openpyxl可用于读写，Excel需是2007及以上版本。</p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt;pip install xlsxwriter==<span class="string">"版本号"</span></div><div class="line">&gt;&gt;&gt;pip install xlrd == <span class="string">"版本号"</span></div><div class="line">&gt;&gt;&gt;pip install xlwt ==<span class="string">"版本号"</span></div><div class="line">...</div></pre></td></tr></table></figure>
 <h2 id="xlsxwriter"><a href="#xlsxwriter" class="headerlink" title="xlsxwriter"></a>xlsxwriter</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> xlsxwriter</div><div class="line"></div><div class="line">workbook = xlsxwriter.Workbook(<span class="string">'F:/test/test.xlsx'</span>)</div><div class="line">worksheet = workbook.add_sheet(<span class="string">'sheetName'</span>)</div><div class="line"></div><div class="line"><span class="comment">#</span></div></pre></td></tr></table></figure>
@@ -449,8 +476,8 @@ Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/02/2017-4-2-Python基础/" rel="next" title="Python问题之中文乱码">
-                <i class="fa fa-chevron-left"></i> Python问题之中文乱码
+              <a href="/2017/04/02/2017-4-2-Python基础/" rel="next" title="Python问题综合">
+                <i class="fa fa-chevron-left"></i> Python问题综合
               </a>
             
           </div>
@@ -477,7 +504,7 @@ Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd�
     <div class="post-spread">
       
         <div class="ds-share flat" data-thread-key="2017/04/04/2017-04-04Python之Excel/"
-     data-title="Python之Excel"
+     data-title="Python"
      data-content=""
      data-url="http://yoursite.com/2017/04/04/2017-04-04Python之Excel/">
   <div class="ds-share-inline">
@@ -508,7 +535,7 @@ Python操作Excel长用的包有xlrd,xlwt,xlutils,xlsxwriter,openpyxl其中xlrd�
     
       <!-- 多说评论框 start -->
 	  <div class="ds-thread" data-thread-key="2017/04/04/2017-04-04Python之Excel/"
-           data-title="Python之Excel" data-url="http://yoursite.com/2017/04/04/2017-04-04Python之Excel/">
+           data-title="Python" data-url="http://yoursite.com/2017/04/04/2017-04-04Python之Excel/">
       </div>
 	  <!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
@@ -664,7 +691,7 @@ var duoshuoQuery = {short_name:"lonewolfsong"};
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#xlsxwriter"><span class="nav-number">2.</span> <span class="nav-text">xlsxwriter</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python基础之文件I-O"><span class="nav-number">1.</span> <span class="nav-text">Python基础之文件I/O</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#mode有以下几种形式"><span class="nav-number">1.1.</span> <span class="nav-text">mode有以下几种形式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python之Excel"><span class="nav-number">2.</span> <span class="nav-text">Python之Excel</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#xlsxwriter"><span class="nav-number">2.2.</span> <span class="nav-text">xlsxwriter</span></a></li></ol></li></ol></div>
             
 
           </div>
