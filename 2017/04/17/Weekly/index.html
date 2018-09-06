@@ -87,34 +87,16 @@
 
 
 
-<meta name="description" content="20170422 周六 晴
-20170416 周日Python：class(类)：具有共同属性特征的事物的集合，在程序中则可以理解为是一个模板object(对象)：根据模板创建出来的实例面向对象的三大特性：继承、多态、封装类成员：字段、方法、属性
-字段字段包含：普通字段、静态字段，主要在于定义和使用时的不同，本质的区别在于内存中的保存位置。
-
-静态字段属于类
-普通字段属于对象
-静态字段只在内存中保">
+<meta name="description" content="迭代器、生成器123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566	# 迭代对象	# 可迭代对象:任意对象含有__iter__()方法或者__getitem__()方法都是可迭代的		# 迭代器	# 任意对">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Weekly">
 <meta property="og:url" content="http://yoursite.com/2017/04/17/Weekly/index.html">
 <meta property="og:site_name" content="GiseR13">
-<meta property="og:description" content="20170422 周六 晴
-20170416 周日Python：class(类)：具有共同属性特征的事物的集合，在程序中则可以理解为是一个模板object(对象)：根据模板创建出来的实例面向对象的三大特性：继承、多态、封装类成员：字段、方法、属性
-字段字段包含：普通字段、静态字段，主要在于定义和使用时的不同，本质的区别在于内存中的保存位置。
-
-静态字段属于类
-普通字段属于对象
-静态字段只在内存中保">
-<meta property="og:updated_time" content="2017-08-01T06:21:14.390Z">
+<meta property="og:description" content="迭代器、生成器123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566	# 迭代对象	# 可迭代对象:任意对象含有__iter__()方法或者__getitem__()方法都是可迭代的		# 迭代器	# 任意对">
+<meta property="og:updated_time" content="2018-08-19T13:39:21.544Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Weekly">
-<meta name="twitter:description" content="20170422 周六 晴
-20170416 周日Python：class(类)：具有共同属性特征的事物的集合，在程序中则可以理解为是一个模板object(对象)：根据模板创建出来的实例面向对象的三大特性：继承、多态、封装类成员：字段、方法、属性
-字段字段包含：普通字段、静态字段，主要在于定义和使用时的不同，本质的区别在于内存中的保存位置。
-
-静态字段属于类
-普通字段属于对象
-静态字段只在内存中保">
+<meta name="twitter:description" content="迭代器、生成器123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566	# 迭代对象	# 可迭代对象:任意对象含有__iter__()方法或者__getitem__()方法都是可迭代的		# 迭代器	# 任意对">
 
 
 
@@ -407,16 +389,7 @@
       
 
       
-        <p>20170422 周六 晴</p>
-<p>20170416 周日<br>Python：<br>class(类)：具有共同属性特征的事物的集合，在程序中则可以理解为是一个模板<br>object(对象)：根据模板创建出来的实例<br>面向对象的三大特性：继承、多态、封装<br>类成员：字段、方法、属性</p>
-<h2 id="字段"><a href="#字段" class="headerlink" title="字段"></a>字段</h2><p>字段包含：普通字段、静态字段，主要在于定义和使用时的不同，本质的区别在于内存中的保存位置。</p>
-<ul>
-<li>静态字段属于类</li>
-<li>普通字段属于对象</li>
-<li>静态字段只在内存中保存一次</li>
-<li>普通字段每个对象都要保存<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">class human：</div><div class="line">    can_fly = False #静态字段</div><div class="line">    can_talk = True</div><div class="line">    has_leg = True</div><div class="line">    def __init__(self,language):</div><div class="line">	    self.language = language #普通字段</div><div class="line">	    pass</div><div class="line">	</div><div class="line">	# 普通方法 </div><div class="line">	def way_to_sea(self):</div><div class="line">	    pass</div><div class="line">	# 类方法 </div><div class="line">	@classmethed</div><div class="line">	def way_to_sky(cls):</div><div class="line">	    print "By plain"</div><div class="line">		print "我只允许类使用"</div><div class="line">	</div><div class="line">	@staticmethod</div><div class="line">	def hug():</div><div class="line">	    pass</div><div class="line">		</div><div class="line">	@property</div><div class="line">	def pro(self):</div><div class="line">	    pass</div><div class="line">	</div><div class="line"># 通过对象访问普通字段</div><div class="line">chinese = human("汉语")</div><div class="line">print chinese.language</div><div class="line"></div><div class="line"># 类直接访问静态字段</div><div class="line">human.can_talk</div></pre></td></tr></table></figure>
-</li>
-</ul>
+        <h2 id="迭代器、生成器"><a href="#迭代器、生成器" class="headerlink" title="迭代器、生成器"></a>迭代器、生成器</h2><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div></pre></td><td class="code"><pre><div class="line">	# 迭代对象</div><div class="line">	# 可迭代对象:任意对象含有__iter__()方法或者__getitem__()方法都是可迭代的</div><div class="line">	</div><div class="line">	# 迭代器</div><div class="line">	# 任意对象只要定义了next()或者__next__()方法就是迭代器</div><div class="line">	</div><div class="line">	# 生成器：相比</div><div class="line">	def generator_function():</div><div class="line">		for i in range(n):</div><div class="line">			yield i</div><div class="line">			</div><div class="line">``` python</div><div class="line">## Map函数</div><div class="line">Map函数会将一个函数映射到一个输入列表的所有元素上</div><div class="line">函数规范如下：  </div><div class="line">map(function,list_of_inputs)</div><div class="line">function 可以是自定义函数，也可以是lambda函数</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">20170416 周日</div><div class="line">Python：</div><div class="line">class(类)：具有共同属性特征的事物的集合，在程序中则可以理解为是一个模板</div><div class="line">object(对象)：根据模板创建出来的实例</div><div class="line">面向对象的三大特性：继承、多态、封装</div><div class="line">类成员：字段、方法、属性</div><div class="line">## 字段</div><div class="line">字段包含：普通字段、静态字段，主要在于定义和使用时的不同，本质的区别在于内存中的保存位置。</div><div class="line">* 静态字段属于类</div><div class="line">* 普通字段属于对象</div><div class="line">* 静态字段只在内存中保存一次</div><div class="line">* 普通字段每个对象都要保存</div><div class="line">``` python</div><div class="line"></div><div class="line">class human：</div><div class="line">    can_fly = False #静态字段</div><div class="line">    can_talk = True</div><div class="line">    has_leg = True</div><div class="line">    def __init__(self,language):</div><div class="line">	    self.language = language #普通字段</div><div class="line">	    pass</div><div class="line">	</div><div class="line">	# 普通方法 </div><div class="line">	def way_to_sea(self):</div><div class="line">	    pass</div><div class="line">	# 类方法 </div><div class="line">	@classmethed</div><div class="line">	def way_to_sky(cls):</div><div class="line">	    print "By plain"</div><div class="line">		print "我只允许类使用"</div><div class="line">	</div><div class="line">	@staticmethod</div><div class="line">	def hug():</div><div class="line">	    pass</div><div class="line">		</div><div class="line">	@property</div><div class="line">	def pro(self):</div><div class="line">	    pass</div><div class="line">	</div><div class="line"># 通过对象访问普通字段</div><div class="line">chinese = human("汉语")</div><div class="line">print chinese.language</div><div class="line"></div><div class="line"># 类直接访问静态字段</div><div class="line">human.can_talk</div></pre></td></tr></table></figure>
 <h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>分为普通方法、静态方法、类方法<br>普通方法：由对象调用；至少有一个参数self(对象本身)<br>静态方法：由类调用，没有默认参数<br>类方法：由类调用；至少一个参数cls  </p>
 <p>注：<br>字段和变量的区别：字段是变量的子集<br>函数和方法的区别：可以简单的理解为和object(对象)有关的叫method(方法)，和class(类)或者module相关的叫function(函数)</p>
 <h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><p>属性可以理解为是普通方法的变种<br>特性：只有一个参数self<br>调用的时候不需要()</p>
@@ -666,7 +639,7 @@ var duoshuoQuery = {short_name:"lonewolfsong"};
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#字段"><span class="nav-number">1.</span> <span class="nav-text">字段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法"><span class="nav-number">2.</span> <span class="nav-text">方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性"><span class="nav-number">3.</span> <span class="nav-text">属性</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#迭代器、生成器"><span class="nav-number">1.</span> <span class="nav-text">迭代器、生成器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法"><span class="nav-number">2.</span> <span class="nav-text">方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性"><span class="nav-number">3.</span> <span class="nav-text">属性</span></a></li></ol></div>
             
 
           </div>
